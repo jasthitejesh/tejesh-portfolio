@@ -121,3 +121,9 @@ footer {
   background: #111823;
   color: #9fb0c3;
 }
+.tagline {
+  font-size: 1.2rem;
+  color: #9fb0c3;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
