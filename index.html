@@ -2,202 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tejesh | Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* ===== Base Styles ===== */
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f0f4f8;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-    h2 {
-      color: #003366;
-      margin-bottom: 1rem;
-    }
-    section {
-      padding: 2rem;
-      animation: fadeInUp 1s ease both;
-    }
-    a {
-      color: inherit;
-    }
-
-    /* ===== Hero Section ===== */
-    .hero {
-      position: relative;
-      height: 80vh;
-      background: url('assets/hero-bg.jpg') no-repeat center center;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: fadeIn 1.5s ease both;
-    }
-    .hero-overlay {
-      background: rgba(0, 0, 0, 0.55);
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      color: #fff;
-      max-width: 600px;
-    }
-    .hero-overlay h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero-overlay p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
-    .cta {
-      background: #00bfa5;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.3s ease;
-      display: inline-block;
-    }
-    .cta:hover {
-      background: #009e8a;
-      transform: scale(1.05);
-    }
-
-    /* ===== Cards ===== */
-    .job, .project, .skill-category {
-      background: #fff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .job:hover, .project:hover, .skill-category:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      background: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      animation: fadeIn 1s ease both;
-    }
-
-    /* ===== Animations ===== */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tejesh | Portfolio</title>
+  <meta name="description" content="Portfolio of Tejesh — Data Analyst & Developer showcasing projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1>Hi, I'm Tejesh 👋</h1>
-      <p>Data Analyst | 3+ Years Experience | MS in Computer Science</p>
-      <a href="assets/Tejesh_Resume.pdf" download class="cta">Download Resume</a>
-    </div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Home">Tejesh</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- ABOUT ME -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a Data Analyst with over three years of experience delivering insights that guide strategy, improve compliance, and optimize operations. With a Master’s in Computer Science and hands-on expertise in SQL, Power BI, Tableau, ETL, and cloud platforms, I specialize in transforming raw data into dashboards and reports that drive decision-making at all levels.
-    </p>
-    <p>
-      Currently at Bank of America, I design and deploy analytics solutions that support risk management and executive credit decisions. My past roles at Accenture and IBM strengthened my ability to collaborate with global teams, automate reporting, and streamline data pipelines—always with a focus on accuracy, scalability, and business value.
-    </p>
-    <p>
-      I’m passionate about bridging the gap between technical data teams and business stakeholders, ensuring analytics translate into real-world impact. I’m now looking to bring this blend of technical depth and business acumen to forward-thinking organizations where data is at the heart of growth.
-    </p>
-  </section>
+  <main>
+    <section class="hero section" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Tejesh</span></h1>
+          <p class="subtitle">Data Analyst focused on turning messy data into clear decisions.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <img src="assets/hero-bg.jpg" alt="Abstract data visualization background" />
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Bank of America | Data Analyst | Jan 2025 – Present</h3>
-      <ul>
-        <li>Built SQL queries & ETL pipelines to process 20M+ records daily</li>
-        <li>Designed dashboards in Tableau/Power BI reducing reporting time by 40%</li>
-        <li>Implemented predictive models improving spend forecasting by 18%</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Accenture | Data Analyst Intern | May 2024 – Jan 2025</h3>
-      <ul>
-        <li>Developed ETL workflows with Alteryx, BigQuery, Azure Data Factory</li>
-        <li>Built Python pipelines integrating CRM, ERP, marketing data</li>
-        <li>Delivered dashboards improving C-suite visibility by 20%</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>IBM India | Data Analyst | Jul 2021 – Jul 2023</h3>
-      <ul>
-        <li>Created Excel-based test automation frameworks reducing defects by 22%</li>
-        <li>Validated SQL data across systems ensuring 99% reporting accuracy</li>
-        <li>Streamlined workflows saving 15+ hrs/week in manual effort</li>
-      </ul>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-category">
-      <h4><i class="fas fa-database"></i> Data & Databases</h4>
-      <p>SQL, PL/SQL, Snowflake, Oracle, MySQL, MongoDB</p>
-    </div>
-    <div class="skill-category">
-      <h4><i class="fas fa-code"></i> Programming</h4>
-      <p>Python (Pandas, NumPy, Scikit-learn), R, SAS, Java</p>
-    </div>
-    <div class="skill-category">
-      <h4><i class="fas fa-chart-bar"></i> Visualization</h4>
-      <p>Tableau, Power BI, Looker, Excel (Pivot Tables, VBA)</p>
-    </div>
-    <div class="skill-category">
-      <h4><i class="fas fa-cloud"></i> Cloud & Big Data</h4>
-      <p>AWS, Azure, GCP, Databricks, Hadoop, Spark</p>
-    </div>
-  </section>
+    <section id="about" class="section" aria-label="About">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-photo" aria-hidden="true"></div>
+          <div class="about-text">
+            <p>
+              I analyze, model, and visualize data to answer business questions. My toolkit spans SQL, Python, and BI tools,
+              with a focus on clean pipelines and crisp, decision‑ready dashboards.
+            </p>
+            <ul class="about-highlights">
+              <li><strong>Experience:</strong> ETL, dashboarding, A/B analysis, forecasting</li>
+              <li><strong>Strength:</strong> Clear storytelling, stakeholder alignment, reproducible workflows</li>
+              <li><strong>Currently:</strong> Building portfolio projects in analytics & automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Customer Spend Forecasting</h3>
-      <p>Built regression and time-series models to improve forecasting accuracy by 18%.</p>
-    </div>
-    <div class="project">
-      <h3>Retail Segmentation Analysis</h3>
-      <p>Performed clustering analysis identifying $2.5M in cross-sell opportunities.</p>
-    </div>
-    <div class="project">
-      <h3>Executive Dashboards</h3>
-      <p>Designed Tableau dashboards reducing reporting time by 40% and improving decision-making.</p>
-    </div>
-  </section>
+    <section id="skills" class="section" aria-label="Skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="assets/icons/sql.svg" alt="SQL" />
+            <p>SQL</p>
+          </div>
+          <div class="skill">
+            <img src="assets/icons/python.svg" alt="Python" />
+            <p>Python</p>
+          </div>
+          <div class="skill">
+            <img src="assets/icons/powerbi.svg" alt="Power BI" />
+            <p>Power BI</p>
+          </div>
+          <div class="skill">
+            <img src="assets/icons/tableau.svg" alt="Tableau" />
+            <p>Tableau</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:tejeshworkconnect@gmail.com">tejeshworkconnect@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/tejesh-jasthi" target="_blank">linkedin.com/in/tejeshjasthi</a></p>
-    <p>Resume:
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+          <article class="project-card">
+            <img src="assets/img/projects/project1.jpg" alt="Sales dashboard screenshot" />
+            <div class="content">
+              <h3>Sales Insights Dashboard</h3>
+              <p>End‑to‑end pipeline from SQL to a Power BI dashboard highlighting revenue trends, cohort retention, and regional mix.</p>
+              <div class="actions">
+                <a class="btn btn-sm" href="https://github.com/jasthitejesh/tejesh-portfolio" target="_blank" rel="noopener">Code</a>
+                <a class="btn btn-sm btn-ghost" href="#" target="_blank" rel="noopener">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/img/projects/project2.png" alt="Customer churn model" />
+            <div class="content">
+              <h3>Churn Prediction Model</h3>
+              <p>Feature engineering and model evaluation in Python with SHAP‑based explainability and actionable levers.</p>
+              <div class="actions">
+                <a class="btn btn-sm" href="#" target="_blank" rel="noopener">Notebook</a>
+                <a class="btn btn-sm btn-ghost" href="#" target="_blank" rel="noopener">Report</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/img/projects/project3.jpg" alt="Operations optimization" />
+            <div class="content">
+              <h3>Ops KPI Tracker</h3>
+              <p>Automated data refresh and alerting for operational KPIs with lightweight scheduling and Slack notifications.</p>
+              <div class="actions">
+                <a class="btn btn-sm" href="#" target="_blank" rel="noopener">Code</a>
+                <a class="btn btn-sm btn-ghost" href="#" target="_blank" rel="noopener">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form" action="https://formspree.io/f/mjkengodis" method="POST">
+
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+          </div>
+          <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note">Prefer email? <a href="mailto:tejeshworkconnect@gmail.com">tejeshworkconnect@gmail.com</a></p>
+        </form>
+
+        <div class="socials">
+          <a href="https://github.com/jasthitejesh" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/tejesh-jasthi" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tejesh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
