@@ -24,24 +24,10 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Hi, I'm <span class="accent">Tejesh</span></h1>
-        <section id="about">
-  <h2>About Me</h2>
-  <img src="profile.png" alt="Tejesh profile" class="profile-img" />
-    <p>
-    I’m a data‑driven problem solver with a passion for transforming raw information into clear, actionable insights. With expertise in SQL, Python, Power BI, and Tableau, I design dashboards, reports, and predictive models that help organizations make smarter, faster decisions.
-    </p>
-    <p>
-    I combine technical skills with a strong understanding of business needs — I don’t just crunch numbers, I tell the story behind them. Whether it’s uncovering hidden trends, streamlining reporting processes, or defining KPIs that truly drive performance, I focus on delivering measurable impact.
-    </p>
-    <p>
-    I thrive in collaborative environments where curiosity is encouraged and challenges are embraced. Outside of work, I’m constantly learning — exploring new analytics techniques, experimenting with visualization styles, and staying ahead of industry trends.
-    </p>
-    </section>
-
-
+        <p class="tagline">Turning complex data into clear, actionable insights that drive business growth.</p>
         <div class="hero-buttons">
           <a href="#projects" class="btn">View My Work</a>
-          <a href="Tejesh_Resume.pdf" class="btn outline" target="_blank">Download Resume</a>
+          <a href="Tejesh_Resume.pdf" class="btn outline" target="_blank">View Resume</a>
         </div>
         <img src="hero-bg.jpg" alt="Hero background" class="hero-img" />
       </div>
@@ -51,22 +37,26 @@
     <section id="about">
       <h2>About Me</h2>
       <img src="profile.png" alt="Tejesh profile" class="profile-img" />
-      <p>I analyze, model, and visualize data to answer business questions. My toolkit spans SQL, Python, and BI tools, with a focus on clean pipelines and crisp, decision‑ready dashboards.</p>
+      <p>
+        I’m a data‑driven problem solver with a passion for transforming raw information into clear, actionable insights. With expertise in SQL, Python, Power BI, and Tableau, I design dashboards, reports, and predictive models that help organizations make smarter, faster decisions.
+      </p>
+      <p>
+        I combine technical skills with a strong understanding of business needs — I don’t just crunch numbers, I tell the story behind them. Whether it’s uncovering hidden trends, streamlining reporting processes, or defining KPIs that truly drive performance, I focus on delivering measurable impact.
+      </p>
+      <p>
+        I thrive in collaborative environments where curiosity is encouraged and challenges are embraced. Outside of work, I’m constantly learning — exploring new analytics techniques, experimenting with visualization styles, and staying ahead of industry trends.
+      </p>
     </section>
 
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
-      <section id="skills">
-  <h2>Skills</h2>
-  <ul class="skills-list">
-    <li>SQL</li>
-    <li>Python</li>
-    <li>Power BI</li>
-    <li>Tableau</li>
-  </ul>
-</section>
-
+      <ul class="skills-list">
+        <li><strong>SQL</strong> – Data querying, joins, optimization</li>
+        <li><strong>Python</strong> – Pandas, NumPy, data cleaning</li>
+        <li><strong>Power BI</strong> – Interactive dashboards, DAX</li>
+        <li><strong>Tableau</strong> – Storytelling with data</li>
+      </ul>
     </section>
 
     <!-- Projects -->
@@ -77,32 +67,54 @@
           <img src="project1.jpg" alt="Sales dashboard" />
           <h3>Sales Insights Dashboard</h3>
           <ul>
-          <li>Built an end‑to‑end pipeline from SQL to Power BI</li>
-          <li>Visualized revenue trends, cohort retention, and regional mix</li>
-          <li>Reduced reporting time by 60%</li>
+            <li>Built an end‑to‑end pipeline from SQL to Power BI</li>
+            <li>Visualized revenue trends, cohort retention, and regional mix</li>
+            <li>Reduced reporting time by 60%</li>
           </ul>
-
         </div>
         <div class="project-card">
           <img src="project2.jpg" alt="Churn model" />
           <h3>Churn Prediction Model</h3>
-          <p>Feature engineering and model evaluation in Python with SHAP‑based explainability and actionable levers.</p>
+          <ul>
+            <li>Engineered features and trained predictive models in Python</li>
+            <li>Used SHAP values for model explainability</li>
+            <li>Identified top churn drivers for retention strategy</li>
+          </ul>
         </div>
         <div class="project-card">
           <img src="project3.jpg" alt="Ops KPI tracker" />
           <h3>Ops KPI Tracker</h3>
-          <p>Automated data refresh and alerting for operational KPIs with lightweight scheduling and Slack notifications.</p>
+          <ul>
+            <li>Automated data refresh and KPI tracking</li>
+            <li>Integrated Slack alerts for threshold breaches</li>
+            <li>Improved operational visibility across teams</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-     <section id="contact">
-  <h2>Contact Me</h2><p>Let’s work together — I’m open to full‑time, freelance, and collaboration opportunities.</p>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Let’s work together — I’m open to full‑time, freelance, and collaboration opportunities.</p>
+      <form action="https://formspree.io/f/mjkengodis" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p>Prefer email? <a href="mailto:tejesh@example.com">tejesh@example.com</a></p>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/jasthitejesh" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
-  <form action="https://formspree.io/f/mjkengodis" method="POST">
-    <div class="social-links">
-  <a href="https://github.com/jasthitejesh" target="_blank">GitHub</a> |
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
-</div>
+  <footer>
+    <p>© <span id="year"></span> Tejesh. All rights reserved.</p>
+  </footer>
 
+  <script src="script.js"></script>
+</body>
+</html>
