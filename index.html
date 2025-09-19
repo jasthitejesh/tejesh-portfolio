@@ -4,17 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tejesh | Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* ===== Base Styles ===== */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    h2 {
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem;
+      animation: fadeInUp 1s ease both;
+    }
+    a {
+      color: inherit;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: url('assets/hero-bg.jpg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1.5s ease both;
+    }
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      max-width: 600px;
+    }
+    .hero-overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero-overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta {
+      background: #00bfa5;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+    .cta:hover {
+      background: #009e8a;
+      transform: scale(1.05);
+    }
+
+    /* ===== Cards ===== */
+    .job, .project, .skill-category {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .job:hover, .project:hover, .skill-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      animation: fadeIn 1s ease both;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- HERO SECTION -->
   <header class="hero">
-    <img src="assets/profile.png" alt="Tejesh" class="avatar">
-    <h1>Hi, I'm Tejesh </h1>
-    <p>Data Analyst | 3+ Years Experience | MS in Computer Science</p>
-    <a href="assets/Tejesh_Resume.pdf" download class="cta">Download Resume</a>
+    <div class="hero-overlay">
+      <h1>Hi, I'm Tejesh 👋</h1>
+      <p>Data Analyst | 3+ Years Experience | MS in Computer Science</p>
+      <a href="assets/Tejesh_Resume.pdf" download class="cta">Download Resume</a>
+    </div>
   </header>
 
+  <!-- ABOUT ME -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -28,6 +128,7 @@
     </p>
   </section>
 
+  <!-- EXPERIENCE -->
   <section id="experience">
     <h2>Experience</h2>
     <div class="job">
@@ -56,6 +157,7 @@
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="skill-category">
@@ -76,6 +178,7 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
@@ -92,17 +195,9 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:tejesh.dev@gmail.com">tejeshjasthi3@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/tejesh_jasthi" target="_blank">linkedin.com/in/tejesh-dev</a></p>
-    <p>Resume: <a href="assets/Tejesh_Resume.pdf" download>Download Resume</a></p>
-  </section>
-
-  <footer>
-    <p>© Tejesh Jasthi</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <p>Email: <a href="mailto:tejeshworkconnect@gmail.com">tejeshworkconnect@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/tejesh-jasthi" target="_blank">linkedin.com/in/tejeshjasthi</a></p>
+    <p>Resume:
